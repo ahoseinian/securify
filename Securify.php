@@ -6,6 +6,7 @@
 
 class Securify{
 	protected $str;
+	
 	protected $hashes = array(
 		"a"=>array("a","A","@","/-\\"),
 		"b"=>array("b","B"),
@@ -67,6 +68,8 @@ class Securify{
 
 	/**
 	*invoke funcion 
+	*@param string $str this is the string to be securified
+	*@param int $lvl between 1-100 define percent of securifieg as it grows chance of replace word with hashes grows
 	*/
 	public function __Invoke($str,$lvl = 100){
 		$this->setString(strtolower($str));
