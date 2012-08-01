@@ -3,6 +3,12 @@
 
 if(isset($_POST['data'])){
 	$request = json_decode($_POST['data']);
-	require_once("../Securify.php");
+	require_once("../../Securify.php");
+	$securify = new Securify;
+
+	echo $securify(
+		$request->string,
+		$request->lvl
+	);
 }
 
