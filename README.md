@@ -9,7 +9,7 @@ Introduction
 
 this small class is built for 
 
--secure php password from something like "php password" to "P#p P@$$\/\/0Rd"
+- secure php password from something like "php password" to "P#p P@$$\/\/0Rd"
 
 this is a automatic password generator but instead of creating something meaning less it make meaningful hash like strings. so users can remember their password easily and password is secure enough.
 
